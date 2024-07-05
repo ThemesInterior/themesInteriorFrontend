@@ -1,0 +1,40 @@
+
+.nav-logo {
+  position: sticky;
+  display: block;
+}
+.logo {
+  font-family: "Press Start 2P", cursive;
+  font-family: "Quattrocento", serif;
+  line-height: 5px;
+  line-break: loose;
+  color: rgb(45, 42, 42);
+  font-weight: bold;
+  padding: 3% 5% 10% 20%;
+  margin: 0%;
+}
+
+nav {
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+  position: sticky;
+  display: block;
+  background-color: #E9E3D5;
+
+}
+a {
+  color: #033043;
+  font-size: 20px;
+  font-family: "Josefin Sans", sans-serif;
+  
+}
+a.nav-link.active-link {
+  color: #fff;
+  border: 2px solid  #6495ed;
+  background-color:#6495ed;
+  border-radius: 5px;
+  transition: all 0.7s ease;
+  content: "";
+
+}
+
+

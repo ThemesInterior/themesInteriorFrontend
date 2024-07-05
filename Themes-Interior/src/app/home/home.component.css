@@ -1,0 +1,333 @@
+.crousel{
+    width: 100%;
+    height: 600px;
+    background-color: rgb(102, 207, 207);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.crousel p{
+    color: white;
+    font-size: 40px;
+    text-align: center;
+}
+/* *************home page about-us container*********************** */
+.home-about-us-container{
+    width: 100%;
+    height: 650px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+/* ========company logo div ================== */
+.company-logo-section{
+    width: 35%;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap:30px
+}
+
+.about-compnay-logo{
+    width: 220px;
+    height: 220px;
+}
+
+.company-name-div{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    
+}
+
+.themes-text,.interior-text{
+    font-size: 3rem;
+    text-transform: uppercase;
+    font-family: sans-serif;
+}
+
+.themes-text{
+    color: #28475d;
+    font-weight: 600;
+}
+
+.interior-text{
+    color: #f5994b;
+}
+
+
+
+/* ========company about us div ================== */
+.about-us-content{
+    width: 60%;
+    height: 100%;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    gap: 20px;
+}
+
+.para1-heading,.para2-heading,.para3-heading
+{
+    font-family: sans-serif;
+    margin-top: 10px;
+    margin-left: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.para1-heading{
+    margin-top: 90px;
+}
+.para1-content,.para2-content,.para3-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20px;
+    width: 90%;
+    font-family: sans-serif;
+    font-size: 18px;
+    text-align: justify;
+}
+
+
+.book-appointment{
+    width: 75%;
+    height: 150px;
+    background-color: #f5994b;
+    position: absolute;
+    top: 1260px;
+    left: 13%;
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px 1px rgb(64, 59, 59);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.book-btn{
+    text-decoration: none;
+    background-color: #ffffff;
+    width: 250px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    border-radius: 8px;
+    text-align: center;
+    font-family: sans-serif;
+    color: #28475d;
+}
+
+.book-btn:hover{
+    background-color: #e8e8e8;
+}
+
+
+/* *************home page services container*********************** */
+.home-services-container{
+    width: 100%;
+    height: 650px;
+    background-color: #28475d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.services-title{
+   padding-top: 50px;
+   margin-bottom: 50px;
+   text-align: center;
+   font-family: sans-serif;
+   font-size: 2rem;
+   text-transform: uppercase;
+   color: #ffffff;
+}
+
+.services-container{
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+
+.service-item{
+    width: 260px;
+    height: 80px;
+    background-color: #f9ebdf00;
+    border-radius: 5px;
+    border: 1px solid #325872;
+    /* box-shadow: 0px 2px 5px 1px rgb(64, 59, 59); */
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: sans-serif;
+}
+
+.service-item:hover{
+    background-color: #325872;
+    /* border: 1px solid #f28f3e; */
+    box-shadow: 0px 2px 5px 1px #1e3645;
+    transition: 0.5s;
+}
+
+/* *************home page feed back container*********************** */
+
+
+
+
+.material-textfield {
+    position: relative;  
+  }
+  
+  label {
+    position: absolute;
+    font-size: 1rem;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #f5994b;
+    color: #28475d;
+    padding: 0 0.3rem;
+    margin: 0 0.5rem;
+    transition: .1s ease-out;
+    transform-origin: left top;
+    pointer-events: none;
+    font-family: sans-serif
+  }
+  input {
+    font-size: 1rem;
+    width: 300px;
+    outline: none;
+    border: 1px solid #332727;
+    border-radius: 5px;  
+    padding: 1rem 0.7rem;
+    color: #28475d;
+    transition: 0.1s ease-out;
+    background-color: #28475d00;
+  }
+  input:focus {
+    border-color: #28475d;  
+  }
+  input:focus + label {
+    color: #28475d;
+    top: 0;
+    transform: translateY(-50%) scale(.9);
+    font-family: sans-serif;
+    font-size: 14px;
+  }
+  input:not(:placeholder-shown) + label {
+    top: 0;
+    transform: translateY(-50%) scale(.9);
+  }
+
+
+
+  /* ===========feedback============ */
+
+  .home-feedback-container{
+    width: 100%;
+    height: 400px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    scroll-behavior: smooth;
+}
+
+  .feedback-items-container{
+    width: 90%;
+    height: 50%;
+    background-color: #f59a4b00;
+    overflow: scroll;
+    display: flex;
+    padding: 10px;
+  
+    
+    
+  }
+
+  .feedback-items-container::-webkit-scrollbar {
+    display: none;
+}
+
+
+  .item-div{
+    width: 600px;
+    height: 90%;
+    background-color: #ffffff;
+    margin-left: 50px;
+    /* margin-top: 10px; */
+    flex: none;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+
+    box-shadow: 0px 8px 15px 1px rgb(206, 206, 206);
+  }
+
+  .feedback-item-left-div{
+    width: 30%;
+    height: 100%;
+    background-color: #f5994b;
+    border-radius: 10px 0px 0px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .feedback-item-right-div{
+    width: 70%;
+    height: 100%;
+    background-color: #e8e8e8;
+    border-radius: 0px 10px 10px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+  }
+
+  .feedback-profile-img{
+    width: 80px;
+    height: 80px;
+    background-color: #e5ff00;
+    border-radius: 40px;
+    margin-top: 10px;
+}
+
+.Write-feedback{
+  border: none;
+  background-color: #f5994b;
+  padding: 15px 40px 15px 40px;
+  color:#ffffff;
+  text-transform: uppercase;
+  font-family: sans-serif;
+  font-size: 16px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+  
+
+  
+
+  
+  
+  
+  
+  
