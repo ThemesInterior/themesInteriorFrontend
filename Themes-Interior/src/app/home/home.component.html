@@ -1,3 +1,53 @@
 <app-carousel></app-carousel>
+  
+  <div class="container mt-5">
+    <div class="row align-items-center">
+      <div class="col-md-6">
+        <h3>ABOUT OUR COMPANY</h3>
+        <h4>Providing your business with a quality IT service is our passion.</h4>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+          incididunt ut labore et dolore magna aliqua enim ad minim veniam, nostrud
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua enim ad minim veniam, nostrud
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua enim ad minim veniam, nostrud
+          </p>
+        
+      </div>
+      <div class="col-md-6 text-center">
+        <img src=" https://cityfurnish.com/blog/wp-content/uploads/2023/07/modern-apartment-with-bold-bright-walls-perfect-showcasing-your-art-collection-min.jpg" alt="it" class="img-fluid">
+      </div>
+    </div>
+  </div>
+  
+ 
+  <div class="container-fluid mt-5">
+    <div class="row">
+      <div class="coverimg position-relative">
+        <div class="coverimgtext position-absolute top-50 start-50 translate-middle text-center">
+          <h2 style="color: white;">Digitally transform and grow your business!</h2>
+          <button class="btn btn-light" routerLink="contactus" class="btn">Contact Us</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
 
 
+<div class="home-services-container">
+    <p class="services-title">Our Services</p>
+
+    <div class="services-container">
+        <div class="service-item" *ngFor="let s of services">
+            <p>{{ s }}</p>
+        </div>
+    </div>
+
+</div>
+
+<app-footer></app-footer>

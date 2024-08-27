@@ -1,44 +1,16 @@
 import { Routes } from '@angular/router';
 import { HomeComponent } from './home/home.component';
+import { AboutUsComponent } from './pages/about-us/about-us.component';
+import { ServiceComponent } from './pages/service/service.component';
+import { ContactUsComponent } from './pages/contact-us/contact-us.component';
 
 export const routes: Routes = [
-    {
-        path:'',
-        component:HomeComponent,
-        pathMatch:'full',
-      },
-//       {
-//         path:'auth',
-       
-//         children:[ 
-//           {
-//             path:'signup',
-//             component:SignupComponent,
-           
-//           },
-//           {
-//             path:'',
-//             component:LoginComponent,   
-//           }
-//         ]
-//       },
-//       {
-//         path:'about-us',
-//         component:AboutUsComponent,
-//         pathMatch:'full'
-//       },
-//       {
-//         path:'contact-us',
-//         component:ContactUsComponent,
-//         pathMatch:'full'
-//       },
-//       {
-//         path:'services',
-//         component:ServicesComponent,
-//         pathMatch:'full',
-//       },
-      
-      
+  { path: '', component: HomeComponent },
+  { path: 'about', component: AboutUsComponent },
+  { path: 'services', component: ServiceComponent },
+  { path: 'contact', component: ContactUsComponent },
+  { path: '**', redirectTo: '' }    
         
         
  ];
+ 
