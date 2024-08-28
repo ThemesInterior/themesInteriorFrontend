@@ -3,23 +3,24 @@
     <a class="navbar-brand title" aria-label="Homepage" routerLink="/">
       <img src="../../../assets/logos/logo.png" height="50px" width="100px" class="logo">
     </a>
-    <span style="color:#28475d; font-family: sans-serif; font-size: 30px; font-weight: bold; text-transform: uppercase;">Themes</span><span style="color:#f5994b;font-family:sans-serif; font-size: 30px;  font-weight: bold; text-transform: uppercase;margin-left: 0.5%;">Interior</span>
+    <span class="logo-text logo-theme">Themes</span>
+    <span class="logo-text logo-interior">Interior</span>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
       <ul class="navbar-nav navlist">
         <li class="nav-item">
-          <a class="nav-link nav_link navhome" aria-current="page" routerLink="/">Home</a>
+          <a class="nav-link nav_link navhome" aria-current="page" routerLink="/" routerLinkActive="active-link" [routerLinkActiveOptions]="{exact:true}">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link nav_link" routerLink="/about">About Us</a>
+          <a class="nav-link nav_link" routerLink="/about" routerLinkActive="active-link">About Us</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link nav_link" routerLink="/services">Services</a>
+          <a class="nav-link nav_link" routerLink="/services" routerLinkActive="active-link">Services</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link nav_link" routerLink="/contact">Contact Us</a>
+          <a class="nav-link nav_link" routerLink="/contact" routerLinkActive="active-link">Contact Us</a>
         </li>
       </ul>
     </div>

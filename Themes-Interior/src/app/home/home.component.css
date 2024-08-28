@@ -184,10 +184,31 @@
   background-color: #325872;
   box-shadow: 0px 2px 5px 1px #1e3645;
 }
+.btn{
+  border: 1px solid orange;
+    padding: 10px;
+    background: transparent;
+    color: white;
+    margin: 10px;
+    width: 80%;
+    max-width: 200px;
+    cursor: pointer;
+    font-size: 25px;
+    transition: background 0.3s, color 0.3s;
+  }
+  .btn:hover {
+    background: orange;
+    color: white;
+  }
 
 @media (max-width: 768px) {
   .services-title {
       font-size: 1.5rem;
+  }
+  .btn{
+    color:#f5994b;
+    font-size: 15px;
+    padding: 5px;
   }
 
   .services-container {
@@ -205,7 +226,11 @@
   .services-title {
       font-size: 1.2rem;
   }
-
+  .btn{
+    color:#f5994b;
+    font-size: 15px;
+    padding: 5px;
+  }
   .service-item {
       width: 90%;
   }

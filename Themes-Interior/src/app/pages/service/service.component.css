@@ -1,20 +1,21 @@
-.service-menu{
+/* Base styles (unchanged) */
+.service-menu {
     width: 100%;
     height: 650px;
-    background-color: rgb(243, 255, 251);
+   
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
 
-.service-conatiner{
+.service-conatiner {
     width: 75%;
     height: 80%;
     background-color: rgba(250, 235, 215, 0);
 }
 
-.service-heading{
+.service-heading {
     width: 100%;
     height: 15%;
     background-color: rgba(2, 95, 95, 0);
@@ -24,22 +25,22 @@
     align-items: center;
 }
 
-.service-text{
-    font-size: 2em;
+.service-text {
+    font-size: 3em;
     font-family: sans-serif;
     color: #f5994b;
 }
 
-.service-desc{
+.service-desc {
     font-family: sans-serif;
     color: #b5b4b4;
     font-weight: 600;
-    font-size: 0.8em;
+    font-size: 2em;
     text-transform: capitalize;
     margin-top: 10px;
 }
 
-.service-item-container{
+.service-item-container {
     width: 100%;
     height: 85%;
     background-color: rgba(255, 0, 0, 0);
@@ -50,7 +51,7 @@
     align-items: center;
 }
 
-.service-item{
+.service-item {
     width: 240px;
     height: 80%;
     background-color: rgba(242, 243, 243, 0);
@@ -59,41 +60,40 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    
 }
 
-.item-list-container{
+.item-list-container {
     width: 100%;
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap : 20px;
+    gap: 20px;
 }
 
-.item-desc{
+.item-desc {
     width: 80%;
-    font-size: 0.7rem;
+    font-size: 1rem;
     text-align: center;
     line-height: 18px;
-    font-family: sans-serif;
+    font-family:Arial, Helvetica, sans-serif;
     color: #28475d;
 }
 
-.service-item:hover{
+.service-item:hover {
     box-shadow: 0px 0px 10px 5px rgba(210, 210, 210, 0.532);
     transition: 0.5s;
 }
 
-.service-item:hover .more-btn{
+.service-item:hover .more-btn {
     background-color: #28475d;
     color: aliceblue;
     cursor: pointer;
     transition: 0.5s;
 }
 
-.more-btn{
+.more-btn {
     border: 1px solid #28475d;
     width: 100px;
     border-radius: 15px;
@@ -101,32 +101,125 @@
     padding: 5px;
 }
 
-.service-image-div{
-    width: 50px;
-    height: 50px;
+.service-image-div {
+    width: 60px;
+    height: 60px;
     background-color: #f5994b;
     border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.hr,.hrd{
+
+.service-image-div i {
+    color: white;
+    font-size: 30px;
+}
+
+.hr, .hrd {
     width: 100px;
     height: 5px;
     background-color: #f5994b;
-   
 }
-.hr{
+
+.hr {
     border-radius: 0px 0px 10px 10px;
     display: none;
 }
-.hrd{
+
+.hrd {
     border-radius: 10px 10px 0px 0px;
     display: none;
 }
 
-.service-item:hover .hr{
+.service-item:hover .hr {
     display: block;
     transition: 0.5s;
 }
-.service-item:hover .hrd{
+
+.service-item:hover .hrd {
     display: block;
     transition: 0.5s;
 }
+
+.title{
+    color:#f5674b;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 0.2cm;
+    
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 992px) {
+    .service-menu {
+        height: auto;
+        padding: 20px 0;
+    }
+
+    .service-conatiner {
+        width: 90%;
+    }
+
+    .service-item-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .service-item {
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .service-text {
+        font-size: 2em;
+    }
+
+    .service-desc {
+        font-size: 1em;
+    }
+
+    .item-desc {
+        font-size: 1rem;
+    }
+
+    .more-btn {
+        width: 80px;
+        font-size: 1em;
+    }
+
+    .service-image-div {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+@media (max-width: 576px) {
+    .service-text {
+        font-size: 1.5em;
+    }
+
+    .service-desc {
+        font-size: 1em;
+    }
+
+    .item-desc {
+        font-size: 1rem;
+    }
+
+    .more-btn {
+        width: 70px;
+        font-size: 0.7em;
+    }
+
+    .service-image-div {
+        width: 30px;
+        height: 30px;
+    }
+}
+

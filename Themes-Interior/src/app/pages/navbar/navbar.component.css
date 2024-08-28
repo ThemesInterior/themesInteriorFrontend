@@ -3,6 +3,15 @@
   position: sticky;
   display: block;
 }
+a.nav-link.active-link {
+  color: #fff;
+  border: 1px solid  #f0834c;
+  background-color:#d37545;
+  border-radius: 5px;
+  transition: all 0.7s ease;
+  content: "";
+
+}
 .logo {
   font-family: "Press Start 2P", cursive;
   font-family: "Quattrocento", serif;
@@ -27,14 +36,47 @@ a {
   font-family: "Josefin Sans", sans-serif;
   
 }
-a.nav-link.active-link {
-  color: #fff;
-  border: 2px solid  #6495ed;
-  background-color:#6495ed;
-  border-radius: 5px;
-  transition: all 0.7s ease;
-  content: "";
-
+.logo-text {
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  text-transform: uppercase;
 }
+
+.logo-theme {
+  color: #28475d;
+}
+
+.logo-interior {
+  color: #f5994b;
+  margin-left: 0.5%;
+}
+
+/* Adjust font size for different screen sizes */
+@media (max-width: 1200px) {
+  .logo-text {
+    font-size: 24px; /* Decrease font size for large screens */
+  }
+}
+
+@media (max-width: 992px) {
+  .logo-text {
+    font-size: 20px; /* Decrease font size for medium screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .logo-text {
+    font-size: 18px; /* Decrease font size for small screens */
+  }
+}
+
+@media (max-width: 576px) {
+  .logo-text {
+    font-size: 16px; /* Decrease font size for extra small screens */
+  }
+}
+
+
 
 

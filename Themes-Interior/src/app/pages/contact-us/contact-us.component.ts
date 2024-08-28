@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 
 @Component({
@@ -8,6 +8,10 @@ import { RouterOutlet } from '@angular/router';
   templateUrl: './contact-us.component.html',
   styleUrl: './contact-us.component.css'
 })
-export class ContactUsComponent {
+export class ContactUsComponent implements OnInit {
+  ngOnInit(): void {
+    
+    throw new Error('Method not implemented.');
+  }
 
 }
